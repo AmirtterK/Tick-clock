@@ -22,7 +22,6 @@ class WorldTime {
       } else {
         data = null;
       }
-      print(" data: $data");
       DateTime timeNow = DateTime.parse(data!['dateTime']);
       dayTime = (timeNow.hour >= 6 && timeNow.hour < 20) ? true : false;
       time = timeNow.toString();
